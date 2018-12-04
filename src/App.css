@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'StolzlBook';
+  src: local('StolzlBook'), url(./fonts/Stolzl-Book.otf) format('otf');
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+
+}
+.header {
+  text-align: left;
+  border-top: solid 4px #a3c755;
+  background-color: #eaeaea; 
+  width: 100%;
+  height: 74px;
+  /* position: fixed; */
+  z-index: 999;
+  top: 0;
+}
+.header h2 {
+  color: #3d6f2f;
+  font-family: "Stolzl - Book";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 65px;
+}
+/* .main::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  opacity: 0.7;
+  z-index: 4;
+} */
+.main h1 {
+  text-align: center;
+  margin-top: 130px;
+  color: #eaeaea;
+  font-family: "Stolzl - Book";
+  font-size: 48px;
+  font-weight: 400;
+}
+.main__span {
+  color: #a3c755;
+  letter-spacing: 2.4px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item {
+  width: 270px;
+  margin-top: 50px;
+}
+.item__title {
+  color: #000000;
+  font-family: "Stolzl - Book";
+  font-size: 16px;
+  font-weight: 400;
+}
+.item__hashtag {
+  color: #49bbf0;
+  font-family: "Stolzl - Book";
+  font-size: 12px;
+  font-weight: 400;
+}
+.item__img img {
+  width: 270px;
+  height: 184px;
+  margin-bottom: -4px;
+}
+.item__img img:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+.item__img {
+  overflow: hidden;
+}
+.item__text {
+  background-color: white;
+  padding: 15px 20px;
+}
+.item span {
+  color: #515151;
+  font-family: "Stolzl - Book";
+  font-size: 12px;
+  font-weight: 400;
+  font-weight: bold;
+}
+.fa-heart {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 12px !important;
+}
+.fa {
+  color: #c1c1c1;
+}
+.item__viev, .item__like {
+  color: #515151;
+  font-family: "Stolzl - Book";
+  font-size: 12px;
+  margin-left: 5px;
+}
+.header__menu {
+  background-color: #fbfffb;
+  border-radius: 10px;
+}
+.header__ul {
+  display: flex;
+  color: green;
+  list-style-type: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.header__li {
+  padding: 10px;
+}
+.header__li a{
+  text-decoration: none;
+  color: black;
+}
+.header__li a:hover {
+  border-bottom: 1px solid;
+}
+.header__active {
+  color: green;
+  font-weight: bold;
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+
+}
+
